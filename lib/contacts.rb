@@ -18,5 +18,3 @@ require 'pry'
     contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete("strawberry")
     contacts
   end
-
-  remove_strawberry(contacts)
