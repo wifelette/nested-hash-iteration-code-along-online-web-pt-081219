@@ -14,12 +14,9 @@ require 'pry'
   #   }
   # }
 
-def remove_strawberry(contacts)
-  contacts.each do |person_k, info_v|
-    person_flavors = person_k[favorite_ice_cream_flavors]
-
-    if person_flavors.include("strawberry")
-      person_flavors.delete_if { |a| a == "strawberry" }
-    end
+  def remove_strawberry(contacts)
+    contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete("strawberry") 
+    contacts
   end
-end
+
+  remove_strawberry(contacts)
